@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+        <!--{{userForm.value | json}}-->
+        <hr />
+        <!--{{ userModel | json}}-->
+           <div calss="form-group">
+         
+           
+            <label>UserNmae:</label>
+            <input type="text" class="from-control" name="cusername" [(ngModel)]=userModel.cusername>
+  
+          </div>
+          <div calss="form-group">
+             
+              <label>PassWord::</label>
+              <input type="password" class="from-control" name="cpass" [(ngModel)]=userModel.cpass>
+            </div>
+          <div>
+            <button class="btn btn-primary" type="submit">Submit Form</button>
+          </div>
+    
+          
+    </form>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,52 @@
+<h3>Create Citizen</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstname">CitizenName</label> 
+      <input type="text" class="form-control" id="cname" required [(ngModel)]="userModel.cname" name="cname">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">CitizenUserNmae</label>
+      <input type="text" class="form-control" id="cusername" required [(ngModel)]="userModel.cusername" name="cusername">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="cemail" required [(ngModel)]="userModel.cemail" name="cemail">
+      </div>
+
+
+      <div class="form-group">
+          <label for="mobileno">MobileNo</label>
+          <input type="text" class="form-control" id="cMono" required [(ngModel)]="userModel.cMono" name="cMono">
+        </div>
+      
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="caddress" required [(ngModel)]="userModel.caddress" name="caddress">
+          </div>
+           
+
+
+
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" required [(ngModel)]="userModel.cpass" name="cpass">
+            </div>
+    
+
+            <div class="form-group">
+              <label for="radio">male</label>
+              <input type="radio" class="form-control" id="cgender" required [(ngModel)]="userModel.cgender" name="cgender" value="male"><br>
+              <label for="radio">female</label>
+              <input type="radio" class="form-control" id="cgender" required [(ngModel)]="userModel.cgender" name="cgender" value="female">
+
+            </div>
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+
